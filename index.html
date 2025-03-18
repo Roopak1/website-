@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>BROKEN_SYSTEM.exe</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <!-- My Style -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Required libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+  
+  <style>
+      /* Broken styling */
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Courier New', monospace;
+          background-color: black;
+          color: red;
+          overflow: hidden;
+      }
+      
+      .container {
+          visibility: hidden;
+      }
+      
+      /* Glitchy text effect */
+      .glitch-text {
+          animation: textGlitch 0.3s infinite;
+      }
+      
+      @keyframes textGlitch {
+          0% { transform: translate(2px, 0); }
+          25% { transform: translate(-2px, 0); }
+          50% { transform: translate(0, -2px); }
+          75% { transform: translate(2px, 2px); }
+          100% { transform: translate(-2px, 0); }
+      }
+      
+      /* Override SweetAlert styles to make it look broken */
+      .swal2-popup {
+          background-color: #111 !important;
+          border: 1px dashed red !important;
+          box-shadow: none !important;
+          color: green !important;
+          font-family: monospace !important;
+      }
+      
+      .swal2-title {
+          color: red !important;
+          font-family: 'Courier New' !important;
+          letter-spacing: -1px !important;
+      }
+      
+      .swal2-content {
+          color: #0f0 !important;
+      }
+      
+      .swal2-confirm {
+          background: none !important;
+          border: 1px solid red !important;
+          color: red !important;
+          font-family: monospace !important;
+      }
+      
+      .swal2-cancel {
+          background: none !important;
+          border: 1px solid yellow !important;
+          color: yellow !important;
+          font-family: monospace !important;
+      }
+  </style>
+</head>
+
+<body>
+
+    <audio class="song" loop autoplay>
+        <source src="https://example.com/static.mp3" type="audio/mpeg">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <div class="container">
+        <div class="zero">SYSTEM INITIALIZING...</div>
+        <div class="zero-1">LOADING CRITICAL DATA...</div>
+        <div class="one">CONNECTION UNSTABLE</div>
+        <div class="two">ATTEMPTING DATA RECOVERY</div>
+        <div class="ten">REPLAY SEQUENCE</div>
+        <div class="hbd-chatbox">System error detected. Terminal access granted. Unauthorized sequence initiated. Security protocols bypassed.</div>
+        <div class="wish-hbd">ERROR CODE: 0xDEADBEEF</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
